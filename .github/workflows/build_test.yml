@@ -4,12 +4,14 @@ on:
   pull_request:
     branches:
       - "*"
-  workflow-dispatch:
+  workflow_dispatch:
     
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: update apt-get
+      run: sudo apt-get update
     - name: install-build-essential
       run: sudo apt-get install build-essential
 
