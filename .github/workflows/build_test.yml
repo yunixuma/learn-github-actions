@@ -1,7 +1,7 @@
 name: Build Check
 
 on:
-  pull-request:
+  pull_request:
     branches:
       - "*"
   workflow-dispatch:
